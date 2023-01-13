@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:padding="3dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cb1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btr"
+            >
+
+            <ImageView
+                android:id="@+id/imgba1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_battery_20_white"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/textba1"
+                android:layout_below="@+id/imgba1"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cb3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btr">
+
+            <ImageView
+                android:id="@+id/imgba2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_battery_charging_white" />
+
+            <TextView
+                android:id="@+id/textba2"
+                android:layout_below="@+id/imgba2"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FFFFFF"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView/>
+
+</GridLayout>

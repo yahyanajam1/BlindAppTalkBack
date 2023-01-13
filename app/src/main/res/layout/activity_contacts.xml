@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/ctabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#888B8B"
+        app:tabTextColor="#FFFFFF">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabc1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dialer"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Log" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

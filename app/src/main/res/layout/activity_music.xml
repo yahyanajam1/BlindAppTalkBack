@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:padding="3dp">
+
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cda"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp"
+            app:cardCornerRadius="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/muc"
+                >
+
+                <ImageView
+                    android:id="@+id/imgdate"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_date_icon"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/textdate"
+                    android:layout_below="@+id/imgdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FFFFFF"
+                    android:text=" "/>
+
+
+            </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="8dp">
+
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/muc">
+
+        <ImageView
+            android:id="@+id/imgtime"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_access_time_black_24dp" />
+
+            <TextView
+                android:id="@+id/textime"
+                android:layout_below="@+id/imgtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"
+                android:text=" "/>
+
+
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView/>
+
+
+
+
+</GridLayout>
